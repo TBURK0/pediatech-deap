@@ -56,11 +56,11 @@ export default function DemoStage() {
       </header>
       <section className="ds-grid">
         <div className="ds-pane ds-patient">
-          <Fit k={k} title="ReNu patient app" src="/?embed=1&patient=Anna" w={PHONE.w} h={PHONE.h} />
+          <Fit k={k} title="ReNu patient app" src="./?embed=1&patient=Anna" w={PHONE.w} h={PHONE.h} />
           {mode === 'both' && <button className="ds-pick" onClick={() => setMode('patient')}><span>Patient app</span><small>Click to open full screen</small></button>}
         </div>
         <div className="ds-pane ds-portal">
-          <Fit k={k} title="ReNu clinician portal" src="/?embed=1#clinician" w={PORTAL.w} h={PORTAL.h} />
+          <Fit k={k} title="ReNu clinician portal" src="./?embed=1#clinician" w={PORTAL.w} h={PORTAL.h} />
           {mode === 'both' && <button className="ds-pick" onClick={() => setMode('clinician')}><span>Clinician portal</span><small>Click to open full screen</small></button>}
         </div>
       </section>
